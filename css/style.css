@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+#title {
+    font-family: 'Vollkorn', serif;
+}
+
+#board {
+    background-color: black;
+    display: inline-block;
+}
+
+.col {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: white;
+    margin: 5px;
+}
