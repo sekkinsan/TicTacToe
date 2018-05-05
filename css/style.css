@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-#title {
+#title, #messages {
     font-family: 'Vollkorn', serif;
 }
 
@@ -22,7 +22,7 @@ table {
     text-align: center;
 }
 
-.col:hover {
+#board tr td:hover {
     background: lightblue;
     cursor: pointer;
 }
