@@ -3,10 +3,12 @@ class TicTacToe {
         this.rows = 3;
         this.cols = 3;
         this.selector = selector;
-        this.createGrid();
+        this.move = 1;
+        this.play = true;
+        this.createBoard();
     }
 
-    createGrid() {
+    createBoard() {
         const $board = $(this.selector);
         for (let row = 0; row <this.rows; row++) {
             const $row = $('<div>')
@@ -18,5 +20,18 @@ class TicTacToe {
             }
             $board.append($row);
         }
+    }
+
+    setupEventListeners() {
+        const $board = $(this.selector);
+        const that = this;
+
+        $board.on('click', '.col.empty', function() {
+            if (that.text()=="" && play) {
+                if ((move%2)==1) { that.append("X"); }
+                else { $that.append("O"); }
+            move++;
+            }
+        });
     }
 };
